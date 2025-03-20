@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Lyrics Database</title>
+    <link rel="stylesheet" href="src/styles.css">
+    <script defer src="src/app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Column: Song List -->
+        <div class="column" id="song-list-column">
+            <h2>Song List</h2>
+            <input type="text" id="search-bar" placeholder="Search songs...">
+            <button id="add-song">+ Add New Song</button>
+            <ul id="song-list"></ul>
+        </div>
+
+        <!-- Middle Column: Lyrics Editor -->
+        <div class="column" id="lyrics-editor-column">
+            <h2 id="song-title">Select a song</h2>
+            <p id="song-authors"></p>
+            <div id="lyrics-container"></div>
+            <button id="add-verse">+ Add Verse</button>
+            <button id="add-chorus">+ Add Chorus</button>
+            <button id="save-lyrics">Save Lyrics</button>
+        </div>
+
+        <!-- Right Column: Formatted Lyrics Output -->
+        <div class="column" id="formatted-lyrics-column">
+            <h2>Formatted Lyrics</h2>
+            <pre id="formatted-lyrics"></pre>
+            <button id="copy-lyrics">Copy to Clipboard</button>
+        </div>
+    </div>
+</body>
+</html>
